@@ -1,0 +1,21 @@
+extends layout
+block main
+  h2 Timestamp Microservice
+  h3 
+    small FreeCodeCamp Challenge
+  p Users can enter a date in the address bar after the url and get back the UNIX and 'NORMAL' versoins of that date.
+  p Users can format the date UNIX or 'NORMAL'.
+  div(class="row")
+    div(class="col m6 s12")
+      h5 Examples
+      ul
+        li
+          blockquote https://djorborn-timestamp-microservice.glitch.me/1512406483645
+        li
+          blockquote https://djorborn-timestamp-microservice.glitch.me/Dec 04 2017
+    div(class="col m6 s12")
+      h5 Results
+      blockquote {unix: 1512406483645, normal: Mon Dec 04 2017 11:54:43 GMT-0500 (EST)}
+      
+      p If users give text other then a date they will get back 'null'.
+      blockquote {unix: null, normal: null}
